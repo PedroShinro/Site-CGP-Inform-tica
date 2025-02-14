@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da pag -->
+    <title>CGP Informática</title>
+
+    <!-- Imagem aba -->
+    <link rel="shortcut icon" href="img/Logo 3.0.png" type="image/x-icon">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="luz">
+        <!-- Logo do site -->
+        <a href="index.html">
+            <img src="img/Logo 3.0.png" alt="Logo" class="img-header">
+        </a>
+
+        <!-- Caixa de pesquisas -->
+        <div class="div-input-header">
+            <input class="input-header" type="text" placeholder="Pesquise o seu produto">
+        </div>
+
+        <!-- Botão de login com link para o formulário-->
+        <div class="login-botao">
+            <a href="login.html" class="linha">
+                <p class="login">Fazer login</p>
+            </a>
+        </div>
+
+        <div class="nav container">
+            <!-- Ícone Carrinho -->
+            <span class="mdi--cart-outline" id="cart-icon"></span>
+
+            <!-- Carrinho -->
+             <div class="cart">
+                <h2 class="cart-title">Meu Carrinho</h2>
+
+                <!-- Funcionamento do Carrinho -->
+                <div class="cart-content">
+                    
+                </div>
+
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-preco">R$0</div>
+                </div>
+                
+                <!-- Botão comprar -->
+                <button type="button" class="botao-comprar">Comprar Agora</button>
+
+                <!-- Fechar o Carrinho -->
+                <span class="mingcute--close-fill" id="close-cart"></span>
+
+            </div>
+        </div>
+
+        <!-- Botões para mudar a cor das sombras -->
+        <span class="material-symbols--circle1"></span>
+        <span class="material-symbols--circle2"></span>
+        <span class="material-symbols--circle3"></span>
+        
+    </header>
+    <!-- Final do cabeçalho -->
+
+    <!-- Conteúdo do site -->
+    <main>
+
+        <!-- Botão voltar para o topo da página -->
+        <span class="emojione-monotone--up-arrow inicio invisivel"></span>
+
+        <h2 class="h2-mais-vendidos">MAIS VENDIDOS</h2>
+
+        <!-- Primeira linha -->
+        <div class="div-produtos">
+
+            <!-- i3 -->
+            <a class="link-produto" href="i3-12100.html">
+                <div class="div-produto luz">
+                    <img src="img/processador.jpg" alt="processador" class="div-img-produto"></img>
+                    <p class="p-descri-produto">Processador Intel Core i3-12100 3.3GHz (4.3GHz Turbo), 12ª Geração, 4-Cores 8-Threads, LGA 1700, Com Cooler</p>
+                    <p class="p-a-vista">R$ 789,90 <span class="span-a-vista">à vista</span></p>
+                    <p class="p-parcelado">12x de R$ 77,44 sem juros</p>
+                </div>
+            </a>
+                
+             
+
+            <!-- R3 -->
+            <a class="link-produto" href="r3-5300g.html">
+                <div class="div-produto luz">
+                    <img src="img/processador-amd.jpg" alt="processador" class="div-img-produto"></img>
+                    <p class="p-descri-produto">Processador AMD Ryzen 3 5300G, 4GHz (4.2GHz Turbo), 4-Cores 8-Threads, AM4, Com vídeo integrado</p>
+                    <p class="p-a-vista">R$ 799,90 <span class="span-a-vista">à vista</span></p>
+                    <p class="p-parcelado">12x de R$ 78,42 sem juros</p>
+                </div>
+            </a>
+
+            <!-- R5 -->
+            <a class="link-produto" href="r5-8500g.html">
+                <div class="div-produto luz">
+                    <img src="img/processador-amd1.jpg" alt="processador" class="div-img-produto"></img>
+                    <p class="p-descri-produto">Processador AMD Ryzen 5 8500G, 3.5GHz (5.0GHz Turbo), 6-Cores 12-Threads, AM5, Com Cooler AMD Wraith Stealth</p>
+                    <p class="p-a-vista">R$ 999,90 <span class="span-a-vista">à vista</span></p>
+                    <p class="p-parcelado">12x de R$ 98,03 sem juros</p>
+                </div>
+            </a>
+
+            <!-- RTX -->
+            <a class="link-produto" href="rtx-3060.html">
+                <div class="div-produto luz">
+                    <img src="img/placa-video.jpg" alt="placa de vídeo" class="div-img-produto"></img>
+                    <p class="p-descri-produto">Placa de Vídeo MSI NVIDIA GeForce RTX 3060 VENTUS 2X OC, LHR, 12GB GDDR6, DLSS, Ray Tracing</p>
+                    <p class="p-a-vista">R$ 1.849,90 <span class="span-a-vista">à vista</span></p>
+                    <p class="p-parcelado">12x de R$ 181,36 sem juros</p>
+                </div>
+            </a>
+
+            <!-- SSD -->
+            <a class="link-produto" href="ssd-250-nvme.html">
+                <div class="div-produto luz">
+                    <img src="img/ssd-nvme.jpg" alt="ssd" class="div-img-produto"></img>
+                    <p class="p-descri-produto">SSD Western Digital Sn570 Blue, 250GB, M.2 NVMe, Leitura até 3500MB/s, Gravação até 1700MB/s</p>
+                    <p class="p-a-vista">R$ 190,86 <span class="span-a-vista">à vista</span></p>
+                    <p class="p-parcelado">8x de R$ 25,11 sem juros</p>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+    <!-- Fim conteúdo do site -->
+
+
+    <!-- Rodapé -->
+    <footer class="luz">
+        <p class="cinza1">CGP INFORMÁTICA</p>
+        <p class="cinza2">Recreio | Rio de Janeiro-RJ</p>
+        <p class="branco1">ATENDIMENTO</p>
+        <p class="branco">De segunda a sexta das 8:30 às 12H / 13H às 18H</p>
+        <img src="img/Logo 3.0.png" class="logo-footer" alt="logo footer">
+    </footer>
+    <!-- Fim do Rodapé -->
+
+
+    <!-- Link com os JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/scroll.js"></script> <!-- Link com o Voltar ao início da página -->
+
+    <!-- jquery para mudar a sombra das páginas -->
+    <script>
+        $(".material-symbols--circle1").click(function(){
+            $(".luz").css("box-shadow", "0 5px 20px -5px yellow");
+        });
+        $(".material-symbols--circle2").click(function(){
+            $(".luz").css("box-shadow", "0 5px 20px -5px aqua");
+        });
+        $(".material-symbols--circle3").click(function(){
+            $(".luz").css("box-shadow", "0 5px 20px -5px rgb(255, 0, 0)");
+        });
+    </script>
+
+</body>
+</html>

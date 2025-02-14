@@ -1,0 +1,80 @@
+/* Limite de tela */
+main {
+    margin: 5%;
+    margin-left: 19%;
+    margin-right: 19%;
+    padding: 30px;
+}
+
+/* Alinhar ao lado */
+.div-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    margin-top: 18px;
+}
+
+/* Cor da caixa */
+.div-produto {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Mudar a cor de fundo quando o mouse passar por cima */
+.div-produto:hover{
+    box-shadow: 0 5px 20px 5px green;
+}
+
+/* Formatar tamanho img */
+.div-img-produto {
+    width: 100%;
+    height: 10vw;
+    padding: 10px;
+    border-bottom: #ebebeb solid 1px;
+}
+
+/* Tamanho frase: à vista */
+.span-a-vista {
+    font-size: 0.8em;
+}
+
+/* Descrição do produto */
+.p-descri-produto {
+    font-size: .8em;
+    margin-bottom: 1vw;
+    padding: 0 10px;
+}
+
+/* Formatação da descrição e valor cartão */
+.p-valor,
+.p-parcelado {
+    font-size: .75em;
+    color: #666;
+    padding: 0 10px;
+}
+
+/* Formatação e cor valor à vista */
+.p-a-vista {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2aaa3e;
+    padding: 0 10px;
+}
+
+/* Espaço para o final do item */
+.p-parcelado{
+    padding: 0 10px 10px 10px;
+}
+
+/* Tirar a aparência de link */
+.link-produto{
+    text-decoration: none;
+    color: black;
+    display: grid;
+}
+
+
+
+
+
