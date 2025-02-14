@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cor-fundo{
+            background-color: black;
+        }
+        .cor-texto{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="cor-fundo"></div>
+</body>
+<script>
+    var elemento = document.getElementsById('container');
+    var novoElemento = document.createElement('p');
+
+    novoElemento.textContent = "Conteúdo do meu parágrafo";
+    novoElemento.classList.add("cor-texto");
+    elemento.appendChild(novoElemento);
+</script>
+</html>

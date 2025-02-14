@@ -1,0 +1,42 @@
+/* Cor e fonte a ser apresentada */
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ebebeb;
+}
+
+/* Cor e alinhamento ao todo*/
+footer {
+    height: 16.6vw;
+    background-color: #121212;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cor e alinhamento das frases*/
+footer p{
+    color: #8B8B8B;
+    font-size: 11px;
+}
+
+/* Última frase em branco */
+.branco{
+    color: #DDDDDD;
+}
+
+/* palavra atendimento */
+.branco1{
+    color: #DDDDDD;
+    padding-top: 10px;
+}
+
+/* Tamanho nome empresa */
+.cinza1{
+    font-size: 20px;
+}
+
+/* Logo do rodapé */
+.logo-footer{
+    padding: 20px;
+    max-width: 9%;
+}
+

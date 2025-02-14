@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cor-fundo{
+            background-color: black;
+        }
+        .cor-texto{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="cor-fundo cor-texto">Texto 1</div>
+</body>
+<script>
+    var elemento = document.getElementsById('container');
+
+    elemento.classList.remove("cor-fundo");
+</script>
+</html>
