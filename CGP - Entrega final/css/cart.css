@@ -1,0 +1,164 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* O carrinho está no header então isso
+    faz com que seja "criada" uma área do
+    carrinho, para n alterar o cabeçalho
+    e parecer que é independente */
+.cart{
+    /* margin-top: 74px; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    color: black;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* Mostrar carrinho */
+.cart.active{
+    right: 0;
+}
+
+/* Título "Meu carrinho" */
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* Ícone Lixeira */
+.mdi--trash {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Ícone fechar carrinho (É a letra "X") */
+.mingcute--close-fill {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='m12 14.122l5.303 5.303a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.304a1.5 1.5 0 1 0 2.122 2.12z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Faz os dados ficarem ao lado da img */
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Tamanho da imagem do produto */
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Posicionamento mais detalhado da caixa numérica */
+.detalhe-caixa{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+/* Deixa o nome do produto em caixa alta */
+.cart-produto-titulo{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Deixa o Preço em negrito */
+.cart-preco{
+    font-weight: 500;
+}
+
+/* formata campo e fonte da quantidade */
+.cart-qtd{
+    border: 1px;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Tamanho e cor do ícone lixeira */
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Posição, alinhamento do total
+    e a linhamento do total */
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
+/* Deixa a palavra total em negrito */
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Espaço entre "Total" e o valor */
+.total-preco{
+    margin-left: 0.5rem;
+}
+
+/* Fonte, cor e tamanho do botão "Comprar Agora" */
+.botao-comprar{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 12px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Mudar a cor do botão quando o mouse passar por cima */
+.botao-comprar:hover{
+    background: green;
+}
+
+/* Posição botão fechar  */
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
